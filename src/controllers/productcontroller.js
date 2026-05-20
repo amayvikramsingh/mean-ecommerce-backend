@@ -119,7 +119,7 @@ exports.updateProduct = async (req, res) => {
       { new: true }
     );
 
-    res.json(product);
+    res.json(product);  
 
   } catch (err) {
     res.status(500).json({ msg: err.message });
